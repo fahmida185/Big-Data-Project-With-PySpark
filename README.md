@@ -10,4 +10,4 @@ There's been a lot of buzz about Big Data over the past few years, and it's fina
 1. This part introduces the exciting world of Big Data, as well as the various concepts and different frameworks for processing Big Data.I have shown why Apache Spark is considered the best framework for BigData.
 2. The main abstraction Spark provides is a resilient distributed dataset (RDD), which is the fundamental and backbone data type of this engine. This cpart introduces RDDs and shows how RDDs can be created and executed using RDD Transformations and Actions.
 3. This part demonstrates Spark SQL which is a Spark module for structured data processing. It provides a programming abstraction called DataFrames and can also act as a distributed SQL query engine. This part shows how Spark SQL allowed me to use DataFrames in Python.
-4. PySpark MLlib is the Apache Spark scalabl
+4. PySpark MLlib is the Apache Spark scalable machine learning library in Python consisting of common learning algorithms and utilities. Throughout this last part, I showed important Machine Learning algorithms. I have built a movie recommendation engine and a spam filter using k-means clustering.
