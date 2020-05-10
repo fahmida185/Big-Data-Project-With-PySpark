@@ -1,19 +1,9 @@
 ﻿#!/usr/bin/env python
-# coding: utf-8
-
 # # Understanding SparkContext
 # A SparkContext represents the entry point to Spark functionality. It's like a key to your car. PySpark automatically creates a SparkContext for you in the PySpark shell (so you don't have to create it by yourself) and is exposed via a variable sc.
-# 
-# In this simple exercise, you'll find out the attributes of the SparkContext in your PySpark shell which you'll be using for the rest of the course.
-# 
-# Instructions
-# 100 XP
 # Print the version of SparkContext in the PySpark shell.
 # Print the Python version of SparkContext in the PySpark shell.
 # What is the master of SparkContext in the PySpark shell?
-
-# In[1]:
-
 
 from pyspark import SparkContext
 # !pip install findspark
@@ -62,7 +52,7 @@ spark_data = sc.parallelize(numb)
 
 
 # Load a local file into PySpark shell
-filepath='C:/Users/fahmida/Github/Big Data PySpark/README.md'
+filepath='C:/Users/fahmida/Github/Big-Data-Project-With-PySpark/ /README.md'
 lines = sc.textFile(filepath)
 
 
@@ -309,10 +299,9 @@ for k, v in total.items():
 
 # In[17]:
 
-
 # Filter the fileRDD to select lines with Spark keyword
 # Create a fileRDD from file_path
-filepath='C:/Users/fahmida/Github/Big Data PySpark/Shakespeare/Complete_Shakespeare.txt'
+filepath='C:/Users/fahmida/Github/Big-Data-Project-With-PySpark/DataSets/ Shakespeare/Complete_Shakespeare.txt'
 baseRDD= sc.textFile(filepath)
 
 # Split the lines of baseRDD into words
@@ -608,7 +597,7 @@ from pyspark import SparkContext
 import findspark
 import pyspark
 from pyspark import SQLContext
-file_path='C:/Users/fahmida/Github/Big Data PySpark/fifa-world-cup-2018-players/wc2018-players.csv'
+file_path='C:/Users/fahmida/Github/Big-Data-Project-With-PySpark/ DataSets/fifa-world-cup-2018-players/wc2018-players.csv'
 findspark.init('C:/Users/fahmida/Anaconda3/Lib/site-packages/pyspark')
 sc = pyspark.SparkContext.getOrCreate()
 sqlContext = SQLContext(sc)
@@ -716,7 +705,7 @@ from pyspark import SparkContext
 import findspark
 import pyspark
 from pyspark import SQLContext
-file_path='C:/Users/fahmida/Github/Big Data PySpark/Movie Lens Dataset/ratings.csv'
+file_path='C:/Users/fahmida/Github/Big-Data-Project-With-PySpark/ DataSets/Movie Lens Dataset/ratings.csv'
 findspark.init('C:/Users/fahmida/Anaconda3/Lib/site-packages/pyspark')
 sc = pyspark.SparkContext.getOrCreate()
 # Load the data into RDD
@@ -825,8 +814,8 @@ print("Mean Squared Error of the model for the test data = {:.2f}".format(MSE))
 
 
 # Load the datasets into RDDs
-file_path_spam=file_path='C:/Users/fahmida/Github/Big Data PySpark/Email/email.spam.txt'
-file_path_non_spam=file_path='C:/Users/fahmida/Github/Big Data PySpark/Email/emails.notspam.txt'
+file_path_spam=file_path='C:/Users/fahmida/Github/Big-Data-Project-With-PySpark/DataSets/Email/email.spam.txt'
+file_path_non_spam=file_path='C:/Users/fahmida/Github/Big-Data-Project-With-PySpark/DataSets/Email/emails.notspam.txt'
 
 #sc = SparkContext("local", "first app")
 #spark = SparkSession(sc)
@@ -927,7 +916,7 @@ print("Model accuracy : {:.2f}".format(accuracy))
 
 
 # Load the dataset into a RDD
-file_path='C:/Users/fahmida/Github/Big Data PySpark/clustering/5000points.txt'
+file_path='C:/Users/fahmida/Github/Big-Data-Project-With-PySpark/ DataSets/clustering/5000points.txt'
 clusterRDD = sc.textFile(file_path)
 
 # Split the RDD based on tab
@@ -1005,6 +994,7 @@ plt.show()
 
 
 # In[ ]:
+
 
 
 
